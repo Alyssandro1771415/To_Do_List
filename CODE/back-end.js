@@ -7,12 +7,18 @@ btn.addEventListener("click", function(e) {
         // Quebra de linha
         brakrow = document.createElement('br');
 
+        // Linha horizontal
+        h_row = document.createElement('hr')
+
         // Caixa de marcação.
         mark = document.createElement('input');
         mark.type = 'checkbox';
         
         // Buscar elemento pai
         var elemento_pai = document.getElementById("tarefas");
+
+        // Adicionando linha de separação
+        elemento_pai.appendChild(h_row)
 
         // Quebrando a linha
         elemento_pai.appendChild(brakrow);
