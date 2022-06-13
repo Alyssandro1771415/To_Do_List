@@ -3,9 +3,22 @@ var btn = document.querySelector("#send")
 btn.addEventListener("click", function(e) {
  
     e.preventDefault();
+
+        // Quebra de linha
+        brakrow = document.createElement('br');
+
+        // Caixa de marcação.
+        mark = document.createElement('input');
+        mark.type = 'checkbox';
         
         // Buscar elemento pai
         var elemento_pai = document.getElementById("tarefas");
+
+        // Quebrando a linha
+        elemento_pai.appendChild(brakrow);
+
+        // caixa de marcação
+        elemento_pai.appendChild(mark);
 
         // Criar elemento
         var txt = document.createElement('a');

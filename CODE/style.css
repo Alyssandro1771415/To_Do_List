@@ -28,4 +28,9 @@ form{
     margin: 20px;
     background-color: gray;
     width: 20%;
+    flex-wrap: wrap;
+}
+
+input{
+    margin: 10px;
 }
