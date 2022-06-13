@@ -1,12 +1,23 @@
-const btn = document.querySelector("#send")
+var btn = document.querySelector("#send")
 
 btn.addEventListener("click", function(e) {
  
     e.preventDefault();
 
-        const name = document.querySelector("#new-item");
+        // Buscar elemento pai
+        var elemento_pai = document.getElementById("tarefas");
 
-        const value = name.value;
+        // Criar elemento
+        var txt = document.createElement('a');
 
-        console.log(value);
+        // Criar o nó de texto
+        var conteudo = document.createTextNode("Um título qualquer");
+
+        // Anexar o nó de texto ao elemento h1
+        txt.appendChild(conteudo);
+
+        // Agora sim, inserir (anexar) o elemento filho (titulo) ao elemento pai (body)
+        elemento_pai.appendChild(txt);
+
 });
+
