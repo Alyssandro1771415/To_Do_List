@@ -28,7 +28,8 @@ form{
 
 form p{
     font-size: 20px;
-    color: white;
+    color: rgb(5, 2, 10);
+    font-family: 'my_font';
 }
 
 #send{
@@ -40,7 +41,7 @@ form p{
     border-radius: 10px;
     padding: 10px;
     margin: 20px;
-    background-color: gray;
+    background-color:aliceblue;
     width: 20%;
     flex-wrap: wrap;
     height: 350px;
